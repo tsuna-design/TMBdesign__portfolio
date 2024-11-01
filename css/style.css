@@ -1,0 +1,737 @@
+@charset "utf-8";
+/* ==========
+共通 
+========== */
+body {
+  background-color: #fffffc;
+}
+.sp-only {
+  display: none;
+}
+.title h2 {
+  font-size: 40px;
+}
+.title p {
+  font-size: 140px;
+  font-weight: bold;
+  color: #f1c16d;
+  opacity: 0.2;
+}
+
+/* ==========
+ヘッダー・メインビジュアル
+========== */
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 70px 85px 70px;
+}
+.logo {
+  width: 330px;
+}
+.header-nav ul {
+  display: flex;
+  gap: 60px;
+}
+.header-nav li {
+  color: #f1c16d;
+  font-size: 22px;
+}
+.mv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 170px;
+}
+.mv-text {
+  margin: 0 14px 0 11.7%;
+}
+.mv-text1 {
+  color: #f1c16d;
+  font-size: 135px;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+.mv-text1 span {
+  color: #6bd6c7;
+}
+.mv-text2 {
+  font-size: 18px;
+  line-height: 2.5;
+}
+.mv img {
+  height: 862px;
+  object-fit: cover;
+  width: calc(100% - 11.7% - 40px - 395px);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.hamburger,
+.header-nav-sp {
+  display: none;
+}
+
+/* ==========
+サービス
+========== */
+#service {
+  margin-bottom: 80px;
+  position: relative;
+}
+.service__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 67px;
+  display: flex;
+  justify-content: space-between;
+}
+#service h2 {
+  font-size: 40px;
+  margin-left: -60px;
+}
+#service .title p {
+  position: absolute;
+  top: 0;
+  left: 5.6%;
+  writing-mode: vertical-lr;
+}
+.service h3 {
+  font-size: 40px;
+  color: #6bd6c7;
+  margin-bottom: 25px;
+}
+.service-inner {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 80px;
+  max-width: 690px;
+  margin-left: auto;
+}
+.service-inner img {
+  width: 225px;
+  align-self: flex-start;
+}
+.service-text p {
+  line-height: 2.25;
+  margin-bottom: 25px;
+  padding-right: 14px;
+}
+.service-tool {
+  display: flex;
+  gap: 10px;
+}
+.service-tool p {
+  background-color: #f1c16d;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+
+/* ==========
+制作実績
+========== */
+#works {
+  margin-bottom: 155px;
+  position: relative;
+}
+#works .title {
+  text-align: right;
+}
+#works h2 {
+  right: 33%;
+  top: 40px;
+  position: absolute;
+  font-size: 40px;
+}
+#works .title p {
+  margin-right: 12.5%;
+  margin-bottom: 95px;
+}
+#works ul {
+  margin-bottom: 90px;
+}
+#works li {
+  padding: 0 15px;
+}
+#works li img {
+  border-radius: 25px;
+  border: solid 8px #f1c16d;
+  box-sizing: border-box;
+}
+.button a::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  right: 22px;
+}
+.button a::after {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 5px 0 5px 9px;
+  border-color: transparent transparent transparent #ffffff;
+  right: 29px;
+}
+.button a {
+  background: #6bd6c7;
+  border-radius: 9999px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 0px 25px 0px 0px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+/* ==========
+私について
+========== */
+#about {
+  background-color: #6bd6c7;
+  margin-bottom: 160px;
+  position: relative;
+}
+.about__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#about .title {
+  text-align: left;
+}
+#about h2 {
+  color: #fff;
+  padding-top: 63px;
+  padding-bottom: 120px;
+  margin-left: -60px;
+  font-size: 40px;
+}
+#about .title p {
+  color: #bdf4ea;
+  position: absolute;
+  top: -150px;
+  left: 5.6%;
+  writing-mode: vertical-lr;
+}
+#about .about {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  gap: 55px;
+  margin-left: 120px;
+  padding-bottom: 110px;
+}
+#about .about-text {
+  text-align: left;
+}
+#about .about-text p {
+  color: #fff;
+}
+#about .about-text-1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+#about .about-text-2 {
+  font-size: 55px;
+  margin-bottom: 60px;
+}
+#about .about-text-3 {
+  line-height: 2.2;
+  margin-bottom: 30px;
+  padding-right: 14px;
+}
+#about .about-text-sns a {
+  color: #fff;
+  font-size: 24px;
+  border-bottom: 1px solid #fff;
+}
+#about .about-text-sns a:first-child {
+  margin-right: 60px;
+}
+#about .about img {
+  width: 390px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* ==========
+お問い合わせ
+========== */
+#contact {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+#contact h2 {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+#contact .title {
+  margin-bottom: 64px;
+}
+#contact .contact-text {
+  margin-left: 340px;
+  margin-bottom: 100px;
+  line-height: 1.83;
+}
+
+/* ==========
+レイアウト
+========== */
+form {
+  margin: 0 auto 160px auto;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.form-label {
+  display: flex;
+  align-items: center;
+  width: 330px;
+}
+.form-label label {
+  font-size: 24px;
+}
+.form-label span {
+  margin-left: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ef6f6f;
+}
+
+/* ==========
+フォームパーツのデザイン
+========== */
+input,
+textarea {
+  background-color: #fff;
+  border: solid 4px #f1c16d;
+  border-radius: 3px;
+  padding: 28px 20px;
+  font-size: 24px;
+  color: #333;
+  flex-grow: 1;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+  font-size: 24px;
+}
+select {
+  background-color: #f2f4f5;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #333;
+}
+.form-row button::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  right: 24px;
+  top: 9px;
+}
+.form-row button::after {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-width: 5px 0 5px 9px;
+  border-color: transparent transparent transparent #ffffff;
+  right: 32px;
+  top: 17px;
+}
+button {
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Tsukushi A Round Gothic", "筑紫A丸ゴシック";
+  margin-top: 30px;
+  padding: 2px 50px 2px 25px;
+  border: none;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #6bd6c7;
+}
+.form-row button {
+  margin-left: 50px;
+}
+
+/* ==========
+フッター
+========== */
+#footer {
+  background-color: #f1c16d;
+  font-size: 24px;
+}
+.flex-item {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0 172px 0;
+}
+.footer-logo {
+  width: 215px;
+}
+.flex-item li {
+  margin-bottom: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.flex-item li:last-child {
+  margin-bottom: 0;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 24px;
+}
+
+/* ==========
+レスポンシブ（タブレット）
+========== */
+@media screen and (max-width: 1150px) {
+  .header__inner {
+    margin: 50px 20px 85px;
+  }
+  .header-nav ul {
+    gap: 16px;
+  }
+  .logo {
+    width: 250px;
+  }
+  #about .about {
+    margin: 0 20px;
+  }
+  #about h2 {
+    margin-left: 20px;
+  }
+  .service__inner {
+    gap: 20px;
+  }
+  #service h2 {
+    margin-left: 20px;
+    min-width: 160px;
+  }
+  .service-tool {
+    flex-wrap: wrap;
+  }
+}
+
+/* ==========
+レスポンシブ（スマホ）
+========== */
+@media screen and (max-width: 767px) {
+  /* ----------
+  共通
+  ---------- */
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  .title h2 {
+    font-size: 14px;
+  }
+  .title p {
+    font-size: 40px;
+  }
+
+  /* ----------
+  ヘッダー
+  ---------- */
+  .header__inner {
+    margin: 26px 30px 32px 30px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    margin: 28px 20px 0 0;
+  }
+  .hamburger span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #f1c16d;
+    top: 13px;
+    transition: 0.3s;
+  }
+  .hamburger span::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #f1c16d;
+    top: -13px;
+    transition: 0.3s;
+  }
+  .hamburger span::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #f1c16d;
+    bottom: -13px;
+    transition: 0.3s;
+  }
+  /* ハンバーガーメニュー */
+  .hamburger.open span::before,
+  .hamburger.open span::after{
+    background-color: #fff;
+  }
+  .hamburger.open span::before{
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .hamburger.open span::after{
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+  .hamburger.open span{
+    background-color: transparent;
+  }
+  .header-nav-sp {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    z-index: 9998;
+    left: 0;
+    top: 0;
+    background-color: #f1c16d;
+  }
+  .header-nav-sp ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-nav-sp li:first-child {
+    border-top: 1px solid #fff;
+  }
+  .header-nav-sp li {
+    font-size: 21px;
+    color: #fff;
+    padding: 20px;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    position: relative;
+  }
+  .header-nav-sp li::after {
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid #ffffff;
+    border-right: 0;
+    right: 20px;
+  }
+  .mv {
+    position: relative;
+    padding-bottom: 140px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .mv img {
+    width: 70%;
+    height: 345px;
+    margin: 0 0 0 auto;
+  }
+  .mv-text {
+    margin-top: -123px;
+  }
+  .mv-text1 {
+    font-size: 65px;
+    margin-bottom: 24px;
+  }
+  .mv-text2 {
+    font-size: 14px;
+  }
+  .logo {
+    width: 220px;
+  }
+
+  /* ----------
+  サービス
+  ---------- */
+  #service h2 {
+    font-size: 14px;
+    margin-left: -11%;
+    margin-top: -20px;
+  }
+  .service__inner {
+    margin-left: 19%;
+    margin-right: 30px;
+    display: block;
+  }
+  .service__inner img {
+    display: block;
+    margin: 0 auto;
+  }
+  .service-tool {
+    flex-wrap: wrap;
+  }
+  .service h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .service-inner {
+    display: block;
+  }
+  .service-text p {
+    font-size: 14px;
+  }
+
+  /* ----------
+  制作実績
+  ---------- */
+  #works .title p {
+    margin-right: 60%;
+  }
+
+  #works h2 {
+    font-size: 14px;
+    margin-right: 36%;
+    margin-top: -26px;
+  }
+  #works ul {
+    flex-direction: column;
+  }
+  #works li {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* ----------
+  私について
+  ---------- */
+  #about .title p {
+    top: -40px;
+  }
+  #about h2 {
+    font-size: 14px;
+    margin-left: 10%;
+    padding-bottom: 55px;
+  }
+  #about img {
+    height: 272px;
+  }
+  #about .about-text-1 {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  #about .about-text-2 {
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+  }
+  .about-text-3 {
+    font-size: 14px;
+  }
+  #about .about {
+    flex-direction: column-reverse;
+    margin-left: 8%;
+    margin-right: 0;
+    padding-bottom: 60px;
+  }
+  #about .about img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #about .about-text-3 {
+    margin-left: 14%;
+    margin-right: 30px;
+  }
+
+  .about-text-sns {
+    padding-left: 14%;
+  }
+
+  /* 問い合わせ */
+
+  #contact .title p {
+    margin-left: 30px;
+  }
+
+  #contact h2 {
+    top: 14px;
+    left: 60px;
+  }
+
+  #contact .contact-text {
+    padding-right: 30px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+  .form-label {
+    width: 90%;
+    padding-bottom: 10px;
+  }
+  input,
+  textarea {
+    width: 90%;
+    box-sizing: border-box;
+  }
+  #contact .contact-text {
+    margin-left: 21%;
+    padding-left: 14px;
+  }
+}
+
+/* フッター */
+
+.sp-flex-item {
+  padding-left: 30px;
+}
+
+.sp-flex-item ul {
+  padding-top: 40px;
+}
+
+.sp-flex-item li {
+  color: #fffffc;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.sp-flex-item .footer-logo {
+  padding-bottom: 27px;
+}

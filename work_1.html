@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMB design portfolio site</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style-work.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+     <!-- ヘッダー -->
+    
+     <header id="header">
+        <div class="header__inner">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img
+                       src="./image/logo.png"
+                       alt="TMBdesign portfolio site"
+                    />
+                </a>
+            </h1>
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">SERVICE</a>
+                    </li>
+                    <li>
+                        <a href="index.html">WORKS</a>
+                    </li>
+                    <li>
+                        <a href="#index.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="index.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーメニュー -->
+
+            <div class="hamburger">
+                <span></span>
+              </div>
+               <nav class="header-nav-sp">
+                <ul>
+                  <li>
+                    <a href="#service">SERVICE</a>
+                  </li>
+                  <li>
+                    <a href="#works">WORKS</a>
+                  </li>
+                  <li>
+                    <a href="#about">ABOUT</a>
+                  </li>
+                  <li>
+                    <a href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </nav> 
+        </div>
+    </header>
+
+    <!-- メイン -->
+
+    <main class="pc-only">
+        <div>
+            <h1>WORKS</h1>
+            <h2>ランディングページ</h2>
+            <h3>原稿/デザイン/実装</h3>
+            <p>
+                ＜使用ツール＞<br>
+                ・Adobe Photoshop<br>
+                ・ペライチ
+            </p>
+        </div>
+        <img src="./image/1.jpg" alt="works" />
+    </main>
+
+    <main class="sp-only">
+        <h1>WORKS</h1>
+        <img src="./image/1.jpg" alt="works" />
+        <div>
+            <h2>ランディングページ</h2>
+            <h3>原稿/デザイン/実装</h3>
+            <p>
+                ＜使用ツール＞<br>
+                ・Adobe Photoshop<br>
+                ・ペライチ
+            </p>
+        </div>
+    </main>
+
+    <!-- ボタン -->
+
+    <div class="button">
+        <a href="works.html">Back to all work</a>
+    </div>
+
+    <!-- フッター -->
+
+    <footer id="footer">
+        <div class="flex-item pc-only">
+            <div class="footer-logo">
+                <img src="./image/footer_logo.png" alt="TMB design Portfolio" />
+            </div>
+            <ul>
+                <li><a href="#service">-SERVICE</a></li>
+                <li><a href="#works">-WORKS</a></li>
+                <li><a href="#about">-ABOUT</a></li>
+                <li><a href="#contact">-CONTACT</a></li>
+            </ul>
+        </div>
+        <p class="copyright">© TMB design All rights reserved.</p>
+        
+
+        <div class="sp-flex-item sp-only">
+            <ul>
+              <li><a href="#service">-SERVICE</a></li>
+              <li><a href="#works">-WORKS</a></li>
+              <li><a href="#about">-ABOUT</a></li>
+              <li><a href="#contact">-CONTACT</a></li>
+            </ul>
+            <div class="footer-logo">
+              <img src="./image/footer_logo.png" alt="TMB design Portfolio" />
+            </div>
+            <p class="copyright">&copy; TMB design All rights reserved.</p>
+          </div>
+    </footer>
+    
+</body>
+</html>
