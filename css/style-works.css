@@ -47,6 +47,7 @@ body {
 
 #title h2 {
     font-size: 18px;
+    margin-bottom: -38px;
 }
 
 #title p {
@@ -139,6 +140,43 @@ body {
     padding-bottom: 24px;
 }
 
+/* 下からふわっと現れる */
+.fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;    /*アニメーションの名前*/
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;         /*アニメーションの実行時間*/
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;  /*アニメーション後、要素が表示されたままにする*/
+}
+@-webkit-keyframes fadeUpAnime {
+  0% {
+    opacity: 0;                   /*非表示*/
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px); /*縦方向に100pxずらす*/
+  }
+  100% {
+    opacity: 1;                   /*表示*/
+    -webkit-transform: translateY(0);
+            transform: translateY(0);     /*元の位置*/
+  }
+}
+@keyframes fadeUpAnime {
+  0% {
+    opacity: 0;                   /*非表示*/
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px); /*縦方向に100pxずらす*/
+  }
+  100% {
+    opacity: 1;                   /*表示*/
+    -webkit-transform: translateY(0);
+            transform: translateY(0);     /*元の位置*/
+  }
+}
+.fadeUpTrigger {
+  opacity: 0;                     /*非表示*/
+}
+
 /* ==========
 レスポンシブ（タブレット）
 ========== */
@@ -152,6 +190,21 @@ body {
     .logo {
       width: 250px;
     }
+}
+
+/* ==========
+レスポンシブ（タブレット）
+========== */
+@media screen and (max-width: 1150px) {
+  .header__inner {
+    margin: 50px 20px 85px;
+  }
+  .header-nav ul {
+    gap: 16px;
+  }
+  .logo {
+    width: 250px;
+  }
 }
 
 /* レスポンシブ（スマホ） */
@@ -274,29 +327,37 @@ body {
   }
 
 /* メイン */
+  #main {
+    margin-bottom: 64px;
+  }
 
   #main .works-list {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  #main .works-list img {
+    box-sizing: border-box;
+  }
+
   /* フッター */
 
-.sp-flex-item {
+  #footer a {
+    font-size: 21px;
+  }
+  
+  #footer img {
+    width: 120px;
+  }
+  
+  .flex-item {
+    flex-direction: column-reverse;
+    gap: 36px;
+    padding-left: 30px;
+    padding-bottom: 64px;
+  }
+  .copyright {
+    text-align: left;
     padding-left: 30px;
   }
-  
-  .sp-flex-item ul {
-    padding-top: 40px;
-  }
-  
-  .sp-flex-item li {
-    color: #fffffc;
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 40px;
-  }
-  
-  .sp-flex-item .footer-logo {
-    padding-bottom: 27px;
-  }
+
 }

@@ -18,6 +18,56 @@ body {
   opacity: 0.2;
 }
 
+/* 下からふわっと現れる */
+.fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;    /*アニメーションの名前*/
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;         /*アニメーションの実行時間*/
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;  /*アニメーション後、要素が表示されたままにする*/
+}
+@-webkit-keyframes fadeUpAnime {
+  0% {
+    opacity: 0;                   /*非表示*/
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px); /*縦方向に100pxずらす*/
+  }
+  100% {
+    opacity: 1;                   /*表示*/
+    -webkit-transform: translateY(0);
+            transform: translateY(0);     /*元の位置*/
+  }
+}
+@keyframes fadeUpAnime {
+  0% {
+    opacity: 0;                   /*非表示*/
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px); /*縦方向に100pxずらす*/
+  }
+  100% {
+    opacity: 1;                   /*表示*/
+    -webkit-transform: translateY(0);
+            transform: translateY(0);     /*元の位置*/
+  }
+}
+.fadeUpTrigger {
+  opacity: 0;                     /*非表示*/
+}
+
+
+/* ナビ　ホバー時 */
+.my-parts {
+	display: inline-block;
+	transition: all .3s ease 0s;
+	text-decoration: none;
+}
+.my-parts:hover {
+	cursor: pointer;
+	color: #6bd6c7;
+}
+
+
 /* ==========
 ヘッダー・メインビジュアル
 ========== */
@@ -189,6 +239,18 @@ body {
   font-size: 24px;
   line-height: 1.8;
   text-decoration: none;
+}
+
+/*ボタン　ホバー時  */
+.button {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.button:hover {
+  color: #FFFFFF;
+  background-color: #6bd6c7;
+  opacity: 0.7;
 }
 
 /* ==========
@@ -557,7 +619,7 @@ button {
   }
   .mv {
     position: relative;
-    padding-bottom: 140px;
+    padding-bottom: 120px;
     flex-direction: column-reverse;
     align-items: flex-start;
     margin-bottom: 0;
@@ -615,8 +677,13 @@ button {
   /* ----------
   制作実績
   ---------- */
+  #works {
+    margin-bottom: 64px
+  }
+
   #works .title p {
     margin-right: 60%;
+    margin-bottom: 48px;
   }
 
   #works h2 {
@@ -635,6 +702,10 @@ button {
   /* ----------
   私について
   ---------- */
+  #about {
+    margin-bottom: 64px
+  }
+
   #about .title p {
     top: -40px;
   }
@@ -713,25 +784,27 @@ button {
     margin-left: 21%;
     padding-left: 14px;
   }
-}
+
 
 /* フッター */
 
-.sp-flex-item {
+#footer a {
+  font-size: 21px;
+}
+
+#footer img {
+  width: 120px;
+}
+
+.flex-item {
+  flex-direction: column-reverse;
+  gap: 36px;
+  padding-left: 30px;
+  padding-bottom: 64px;
+}
+.copyright {
+  text-align: left;
   padding-left: 30px;
 }
 
-.sp-flex-item ul {
-  padding-top: 40px;
-}
-
-.sp-flex-item li {
-  color: #fffffc;
-  font-size: 30px;
-  font-weight: bold;
-  padding-bottom: 40px;
-}
-
-.sp-flex-item .footer-logo {
-  padding-bottom: 27px;
 }
