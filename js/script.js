@@ -7,6 +7,7 @@ $(function () {
     centerMode: true,
     centerPadding: "10%",
     arrows: false,
+    dots: true,
     responsive: [
       {
         breakpoint: 768, // 767px以下
@@ -57,3 +58,8 @@ $(function() {
       });
     };    
   });
+
+  window.onload = function() {
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+  }

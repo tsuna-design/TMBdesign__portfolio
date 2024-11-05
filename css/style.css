@@ -1,4 +1,37 @@
 @charset "utf-8";
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 3s;
+  background-color: #ecd4ab;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+/* ローディングアニメーション */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+ 
 /* ==========
 共通 
 ========== */
@@ -241,16 +274,26 @@ body {
   text-decoration: none;
 }
 
-/*ボタン　ホバー時  */
-.button {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+.slick-dots {
+  bottom: -140px;
 }
 
-.button:hover {
-  color: #FFFFFF;
-  background-color: #6bd6c7;
-  opacity: 0.7;
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f1c16d;
+  font-size:20px!important;
+}
+
+.slick-dots li button:before {
+  color: #f1c16d;
+  font-size:20px!important;
+}
+
+.slick-dots li{
+	width:40px!important;
 }
 
 /* ==========

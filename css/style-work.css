@@ -1,5 +1,40 @@
 @charset "utf-8";
 
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 3s;
+  background-color: #ecd4ab;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+/* ローディングアニメーション */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*  */
+
 body {
     background-color: #fffffc;
 }
@@ -16,7 +51,7 @@ body {
 .header__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     margin: 50px 70px 85px 70px;
 }
 
@@ -189,6 +224,17 @@ main img {
     -webkit-transform: translateY(0);
             transform: translateY(0);     /*元の位置*/
   }
+}
+
+/* ナビ　ホバー時 */
+.my-parts {
+	display: inline-block;
+	transition: all .3s ease 0s;
+	text-decoration: none;
+}
+.my-parts:hover {
+	cursor: pointer;
+	color: #6bd6c7;
 }
 
 /* ==========
