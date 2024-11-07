@@ -19,6 +19,16 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
+  <script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='THANKSページのURL';}"
+></iframe>
+
   <body>
     
     <div id="loading">
@@ -164,8 +174,8 @@
           </a>
         </li>
         <li>
-          <a href="work_5.html">
-            <img src="./image/5.jpg" alt="works" />
+          <a href="work_20.html">
+            <img src="./image/20.png" alt="works" />
           </a>
         </li>
       </ul>
@@ -213,7 +223,12 @@
         みなさまの想いを、Webデザインの力でカタチに。
         いつでもお気軽にお問い合わせください。
       </p>
-      <form action="confirm.php" method="post">
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdqmUGfR9XmfNFkDy8iq-2zCdSeZ4y0LqAB4Gntv7NYAKEXWQ/formResponse" 
+            method="post"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+            class="c-form"
+      >
         <div class="form-row">
           <div class="form-label">
             <label for="name">お名前</label>
@@ -222,9 +237,9 @@
           <input
             type="text"
             id="name"
-            name="name"
+            name="entry.1238049796"
             placeholder="例) 山田 花子"
-            required
+            required="required"
           />
         </div>
         <div class="form-row">
@@ -235,9 +250,9 @@
           <input
             type="email"
             id="email"
-            name="email"
+            name="entry.674905406"
             placeholder="例) abcd@xyz.com"
-            required
+            required="required"
           />
         </div>
         <div class="form-row">
@@ -247,9 +262,9 @@
           <input
             type="tel"
             id="tel"
-            name="tel"
+            name="entry.674905406"
             placeholder="例) 090-1234-5678"
-            required
+            required="required"
           />
         </div>
         <div class="form-row">
@@ -259,10 +274,10 @@
           </div>
           <textarea
             id="message"
-            name="message"
+            name="entry.1814391764"
             rows="5"
             placeholder="お問い合わせ内容をこちらにご記入ください"
-            required
+            required="required"
           ></textarea>
         </div>
         <div class="form-row">

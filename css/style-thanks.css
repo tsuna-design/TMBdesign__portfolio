@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+    background-color: #fffffc;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    color: #f1c16d;
+    margin: 128px 0 64px;
+}
+
+p {
+    font-size: 24px;
+    color: #754c24;
+    margin-bottom: 64px;
+}
+
+img {
+    width: 36px;
+    margin: auto 43px;
+}
