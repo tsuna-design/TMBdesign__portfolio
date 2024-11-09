@@ -9,6 +9,17 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'rhw4yzh',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    
   </head>
   <body>
     
@@ -48,16 +59,16 @@
         <nav class="header-nav-sp">
           <ul>
             <li>
-              <a href="#service">SERVICE</a>
+              <a href="index.html#service">SERVICE</a>
             </li>
             <li>
-              <a href="#works">WORKS</a>
+              <a href="works.html">WORKS</a>
             </li>
             <li>
-              <a href="#about">ABOUT</a>
+              <a href="index.html#about">ABOUT</a>
             </li>
             <li>
-              <a href="#contact">CONTACT</a>
+              <a href="index.html#contact">CONTACT</a>
             </li>
           </ul>
         </nav>
@@ -79,8 +90,17 @@
     <main>
       <div id="main">
         <ul class="works-list fadeUpTrigger">
+          <li class="orange">
+            <a href="./work/work_20.html">
+              <img src="./image/20.png" alt="works" />
+              <div class="works-text">
+                <p>ランディングページ</p>
+                <p>原稿/デザイン/実装</p>
+              </div>
+            </a>
+          </li>
           <li class="blue">
-            <a href="work_1.html">
+            <a href="./work/work_1.html">
               <img src="./image/1.jpg" alt="works" />
               <div class="works-text">
                 <p>ランディングページ</p>
@@ -89,7 +109,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_2.html">
+            <a href="./work/work_2.html">
               <img src="./image/2.jpg" alt="works" />
               <div class="works-text">
                 <p>ランディングページ</p>
@@ -98,7 +118,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_3.html">
+            <a href="./work/work_3.html">
               <img src="./image/3.jpg" alt="works" />
               <div class="works-text">
                 <p>ランディングページ</p>
@@ -107,7 +127,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_4.html">
+            <a href="./work/work_4.html">
               <img src="./image/4.jpg" alt="works" />
               <div class="works-text">
                 <p>ランディングページ</p>
@@ -116,7 +136,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_5.html">
+            <a href="./work/work_5.html">
               <img src="./image/5.jpg" alt="works" />
               <div class="works-text">
                 <p>ランディングページ（PC）</p>
@@ -125,7 +145,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_6.html">
+            <a href="./work/work_6.html">
               <img src="./image/6.jpg" alt="works" />
               <div class="works-text">
                 <p>ランディングページ（SP）</p>
@@ -134,7 +154,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_7.html">
+            <a href="./work/work_7.html">
               <img src="./image/7.jpg" alt="works" />
               <div class="works-text">
                 <p>ランディングページ</p>
@@ -143,7 +163,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_8.html">
+            <a href="./work/work_8.html">
               <img src="./image/8.jpg" alt="works" />
               <div class="works-text">
                 <p>ファーストビュー</p>
@@ -152,7 +172,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_9.html">
+            <a href="./work/work_9.html">
               <img src="./image/9.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -161,7 +181,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_10.html">
+            <a href="./work/work_10.html">
               <img src="./image/10.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -170,7 +190,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_11.html">
+            <a href="./work/work_11.html">
               <img src="./image/11.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -179,7 +199,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_12.html">
+            <a href="./work/work_12.html">
               <img src="./image/12.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -188,7 +208,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_13.html">
+            <a href="./work/work_13.html">
               <img src="./image/13.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -197,7 +217,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_14.html">
+            <a href="./work/work_14.html">
               <img src="./image/14.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -206,7 +226,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_15.html">
+            <a href="./work/work_15.html">
               <img src="./image/15.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -215,7 +235,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_16.html">
+            <a href="./work/work_16.html">
               <img src="./image/16.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -224,7 +244,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_17.html">
+            <a href="./work/work_17.html">
               <img src="./image/17.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -233,7 +253,7 @@
             </a>
           </li>
           <li class="orange">
-            <a href="work_18.html">
+            <a href="./work/work_18.html">
               <img src="./image/18.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>
@@ -242,7 +262,7 @@
             </a>
           </li>
           <li class="blue">
-            <a href="work_19.html">
+            <a href="./work/work_19.html">
               <img src="./image/19.jpg" alt="works" />
               <div class="works-text">
                 <p>バナー</p>

@@ -129,6 +129,7 @@ body {
 }
 .mv-text {
   margin: 0 14px 0 11.7%;
+  z-index: 8888;
 }
 .mv-text1 {
   color: #f1c16d;
@@ -450,8 +451,8 @@ select {
   height: 20px;
   border-radius: 50%;
   border: 3px solid #fff;
-  right: 24px;
-  top: 9px;
+  right: 16px;
+  top: 4px;
 }
 .form-row button::after {
   position: absolute;
@@ -459,16 +460,16 @@ select {
   border-style: solid;
   border-width: 5px 0 5px 9px;
   border-color: transparent transparent transparent #ffffff;
-  right: 32px;
-  top: 17px;
+  right: 24px;
+  top: 12px;
 }
 button {
   position: relative;
   cursor: pointer;
   font-size: 24px;
-  font-family: "Tsukushi A Round Gothic", "筑紫A丸ゴシック";
+  /* font-family: "Tsukushi A Round Gothic", "筑紫A丸ゴシック"; */
   margin-top: 30px;
-  padding: 2px 50px 2px 25px;
+  padding: 5px 50px 5px 25px;
   border: none;
   border-radius: 9999px;
   color: #fff;
@@ -650,7 +651,7 @@ button {
     border-bottom: 1px solid #fff;
     position: relative;
   }
-  .header-nav-sp li::after {
+  .header-nav-sp a::after {
     position: absolute;
     content: "";
     border-style: solid;

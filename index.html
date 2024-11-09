@@ -17,7 +17,29 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'rhw4yzh',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    
   </head>
+
+  <script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='THANKSページのURL';}"
+></iframe>
 
   <body>
     
@@ -144,28 +166,28 @@
       </div>
       <ul class="slider">
         <li>
-          <a href="work_1.html">
+          <a href="./work/work_1.html">
             <img src="./image/1.jpg" alt="works" />
           </a>
         </li>
         <li>
-          <a href="work_2.html">
+          <a href="./work/work_2.html">
             <img src="./image/2.jpg" alt="works" />
           </a>
         </li>
         <li>
-          <a href="work_3.html">
+          <a href="./work/work_3.html">
             <img src="./image/3.jpg" alt="works" />
           </a>
         </li>
         <li>
-          <a href="work_4.html">
+          <a href="./work/work_4.html">
             <img src="./image/4.jpg" alt="works" />
           </a>
         </li>
         <li>
-          <a href="work_5.html">
-            <img src="./image/5.jpg" alt="works" />
+          <a href="./work/work_20.html">
+            <img src="./image/20.png" alt="works" />
           </a>
         </li>
       </ul>
@@ -213,7 +235,12 @@
         みなさまの想いを、Webデザインの力でカタチに。
         いつでもお気軽にお問い合わせください。
       </p>
-      <form action="confirm.php" method="post">
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdqmUGfR9XmfNFkDy8iq-2zCdSeZ4y0LqAB4Gntv7NYAKEXWQ/formResponse" 
+            method="post"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+            class="c-form"
+      >
         <div class="form-row">
           <div class="form-label">
             <label for="name">お名前</label>
@@ -222,9 +249,9 @@
           <input
             type="text"
             id="name"
-            name="name"
+            name="entry.1238049796"
             placeholder="例) 山田 花子"
-            required
+            required="required"
           />
         </div>
         <div class="form-row">
@@ -235,9 +262,9 @@
           <input
             type="email"
             id="email"
-            name="email"
+            name="entry.674905406"
             placeholder="例) abcd@xyz.com"
-            required
+            required="required"
           />
         </div>
         <div class="form-row">
@@ -247,9 +274,9 @@
           <input
             type="tel"
             id="tel"
-            name="tel"
+            name="entry.674905406"
             placeholder="例) 090-1234-5678"
-            required
+            required="required"
           />
         </div>
         <div class="form-row">
@@ -259,10 +286,10 @@
           </div>
           <textarea
             id="message"
-            name="message"
+            name="entry.1814391764"
             rows="5"
             placeholder="お問い合わせ内容をこちらにご記入ください"
-            required
+            required="required"
           ></textarea>
         </div>
         <div class="form-row">

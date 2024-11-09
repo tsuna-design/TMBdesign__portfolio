@@ -349,7 +349,7 @@ main img {
         border-bottom: 1px solid #fff;
         position: relative;
       }
-      .header-nav-sp li::after {
+      .header-nav-sp a::after {
         position: absolute;
         content: "";
         border-style: solid;

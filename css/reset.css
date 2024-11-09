@@ -14,12 +14,15 @@ ul,
 li,
 p,
 a,
-dl {
+dl,
+button {
     margin: 0;
     padding: 0;
     line-height: 1;
     color: #8c6239;
-    font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック";
+    font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック","fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;;
     font-feature-settings: "palt";
     box-sizing: border-box;
 }

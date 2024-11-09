@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMB design portfolio site</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style-work.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'rhw4yzh',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+      
+</head>
+<body>
+
+    <div id="loading">
+        <div class="spinner"></div>
+      </div>
+
+     <!-- ヘッダー -->
+    
+     <header id="header">
+        <div class="header__inner">
+            <h1 class="logo">
+                <a href="../index.html">
+                    <img
+                       src="../image/logo.png"
+                       alt="TMBdesign portfolio site"
+                    />
+                </a>
+            </h1>
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a class="my-parts" href="../index.html#service">SERVICE</a>
+                    </li>
+                    <li>
+                        <a class="my-parts" href="../works.html">WORKS</a>
+                    </li>
+                    <li>
+                        <a class="my-parts" href="../index.html#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="my-parts" href="../index.html#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーメニュー -->
+
+            <div class="hamburger">
+                <span></span>
+              </div>
+               <nav class="header-nav-sp">
+                <ul>
+                  <li>
+                    <a href="../index.html#service">SERVICE</a>
+                  </li>
+                  <li>
+                    <a href="../works.html">WORKS</a>
+                  </li>
+                  <li>
+                    <a href="../index.html#about">ABOUT</a>
+                  </li>
+                  <li>
+                    <a href="../index.html#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </nav> 
+        </div>
+    </header>
+
+    <!-- メイン -->
+
+    <main class="pc-only">
+        <div>
+            <h1>WORKS</h1>
+            <h2>ランディングページ</h2>
+            <h3>原稿/デザイン/実装</h3>
+            <p>
+                ＜使用ツール＞<br>
+                ・Adobe Photoshop<br>
+                ・ペライチ
+            </p>
+        </div>
+        <img src="../image/3.jpg" alt="works" />
+    </main>
+
+    <main class="sp-only">
+        <h1>WORKS</h1>
+        <img src="../image/3.jpg" alt="works" />
+        <div>
+            <h2>ランディングページ</h2>
+            <h3>原稿/デザイン/実装</h3>
+            <p>
+                ＜使用ツール＞<br>
+                ・Adobe Photoshop<br>
+                ・ペライチ
+            </p>
+        </div>
+    </main>
+
+    <!-- ボタン -->
+
+    <div class="button">
+        <a href="./works.html">Back to all work</a>
+    </div>
+
+    <!-- フッター -->
+
+    <footer id="footer">
+        <div class="flex-item">
+            <a href="../index.html" class="footer-logo">
+                <img src="../image/footer_logo.png" alt="TMB design Portfolio" />
+            </a>
+            <ul>
+                <li><a href="../index.html#service">-SERVICE</a></li>
+                <li><a href="../works.html">-WORKS</a></li>
+                <li><a href="../index.html#about">-ABOUT</a></li>
+                <li><a href="../index.html#contact">-CONTACT</a></li>
+            </ul>
+        </div>
+        <p class="copyright">© TMB design All rights reserved.</p>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>
